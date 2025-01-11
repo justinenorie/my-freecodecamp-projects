@@ -1,0 +1,71 @@
+body {
+    background-color: #313146;
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
+    color: #DDDFE1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.palindrome-checker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+    border: solid 2px black;
+    border-radius: 20px;
+    background-color: #252435;
+}
+
+h1 {
+    font-weight: 900;
+    margin: 0;
+}
+
+h6 {
+    margin: 0;
+}
+
+.palindrome-checker label {
+    font-size: 20px;
+    font-weight: 900;
+    margin: 15px;
+}
+
+.palindrome-checker input {
+    width: 80%;
+    padding: 12px;
+    border-radius: 20px;
+}
+
+.palindrome-checker button {
+    background-color: #082244;
+    padding: 15px;
+    margin: 20px;
+    width: 30%;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #DDDFE1;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.definition {
+    border-radius: 20px;
+    width: 50%;
+    border: solid 2px black;
+    text-align: center;
+    padding: 20px;
+    background-color: #252435;
+}
