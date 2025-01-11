@@ -1,0 +1,62 @@
+body {
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEFaDD;
+}
+h1 {
+    margin: 0;
+    text-align: center;
+}
+p {
+    margin: 0;
+    text-align: center;
+}
+form {
+    width: 40%;
+    padding: 10px 50px;
+    border: 1px solid #00b33c;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label {
+    margin: 10px;
+}
+input[type="text"], input[type="email"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+select {
+    width: 100%;
+    padding: 10px;
+}
+input[type="radio"] {
+    margin: 10px;
+}
+label[for="name-label"] {
+    margin-left: 10px;
+}
+input[type="checkbox"] {
+    margin: 10px;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+}
+button {
+    background-color: #00b33c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
