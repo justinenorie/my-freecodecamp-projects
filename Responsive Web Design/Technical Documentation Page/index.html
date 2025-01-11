@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Technical Documentation Page</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>JavaScript Documentation</header>
+            <ul>
+                <li><a class="nav-link" href="#introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#javaScript_and_java">JavaScript and Java</a></li>
+                <li><a class="nav-link" href="#comments">Comments</a></li>
+                <li><a class="nav-link" href="#variables">Variables</a></li>
+                <li><a class="nav-link" href="#functions">Functions</a></li>
+            </ul>
+        </nav>
+
+        <main id="main-doc">
+            <section class="main-section" id="introduction">
+                <header>Introduction</header>
+                <p>
+                    JavaScript is a versatile, dynamically typed programming
+                    language used for interactive web applications, supporting
+                    both client-side and server-side development, and
+                    integrating seamlessly with HTML, CSS, and a rich standard
+                    library.
+                </p>
+                <p>
+                    JavaScript is both compiled and interpreted. The V8 engine
+                    improves performance by first interpreting code and then
+                    compiling frequently used functions for speed. This makes
+                    JavaScript efficient for modern web apps. It’s mainly used
+                    for web development but also works in other environments.
+                    You can learn it through tutorials and examples.
+                </p>
+            </section>
+
+            <section class="main-section" id="javaScript_and_java">
+                <header>JavaScript and Java</header>
+                <p>
+                    JavaScript is a beginner-friendly programming language that
+                    allows developers to design interactive websites.
+                </p>
+                <ul>
+                    <li><p>JavaScript is more secure.</p></li>
+                    <li><p>JavaScript is more dynamic.</p></li>
+                    <li><p>JavaScript is more interactive.</p></li>
+                </ul>
+                <p>
+                    On the other hand, Java is a complex language used to build
+                    sophisticated applications like Android apps, chatbots, and
+                    financial software.
+                </p>
+                <ul>
+                    <li><p>Java is more secure.</p></li>
+                    <li><p>Java is more static.</p></li>
+                    <li><p>Java is more stable.</p></li>
+                </ul>
+            </section>
+
+            <section class="main-section" id="comments">
+                <header>Comments</header>
+                <p>
+                    JavaScript comments can be used to explain JavaScript code,
+                    and to make it more readable.
+                </p>
+                <p>
+                    Any text between // and the end of the line will be ignored
+                    by JavaScript (will not be executed).
+                </p>
+                <pre>
+                    <code>
+                        // This is a comment for this variable 
+                        var x = 10;
+                    </code>
+                    <code>
+                        /* 
+                            Multi - Line Comments
+                            Aye 
+                            Yow
+                        */
+                    </code>
+                </pre>
+            </section>
+
+            <section class="main-section" id="variables">
+                <header>Variables</header>
+                <p>JavaScript Variables can be declared in 4 ways:</p>
+                <ul>
+                    <li><p>Using var</p></li>
+                    <li><p>Using let</p></li>
+                    <li><p>Using const</p></li>
+                </ul>
+                <pre>
+                    <code>
+                        var x = 10;
+                        let y = 20;
+                        const z = 30;
+                    </code>
+                </pre>
+                <p>
+                    It is considered good programming practice to always declare
+                    variables before use.
+                </p>
+            </section>
+
+            <section class="main-section" id="functions">
+                <header>Functions</header>
+                <p>
+                    A JavaScript function is a block of code designed to perform
+                    a particular task.
+                </p>
+                <p>
+                    A JavaScript function is executed when "something" invokes
+                    it (calls it).
+                </p>
+                <pre>
+                    <code> 
+                        //Function
+                        function myFunction(p1, p2) { 
+                            return p1 * p2; 
+                        } 
+                    </code>
+                    <code> 
+                        //Arrow Function
+                        const myFunction (p1, p2) = > {
+                            return p1 * p2
+                        }
+                    </code>
+                </pre>
+            </section>
+        </main>
+    </body>
+</html>
