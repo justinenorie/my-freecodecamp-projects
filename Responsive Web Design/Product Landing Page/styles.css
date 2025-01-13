@@ -1,0 +1,32 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px black;
+    width: 100%;
+    padding: 20px;
+}
+
+.brand{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+
+}
+
+#header-img{
+    width: 120px;
+    height: 120px;
+}
+
+@media screen and (min-width: 650px) {
+
+}
