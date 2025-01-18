@@ -2,14 +2,14 @@
 
 // Function for getting the email and mask it
 const maskEmail = (email) => {
-    let hide = "*"; // The text to hide the email
+    let hide = "*"; // The text to hide
 
     //Using the slice method to remove the first and last part of the selected text
 
-    //Selecting the text of the email from start until it reaches the @ part of the email
+    //Selecting the text of the email from start until it reaches the @ part of the email eg. justine@gmail.com it will only select the justine
     const textFinder = email.slice(0, ( email.indexOf("@") ));
     
-    //This will select the email from @ to last letter 
+    //This will select the email from @ to last letter eg."@gmail.com"
     const emailCheck = email.slice( email.indexOf("@") ); 
 
     // This is the method for selecting the First and Last letter
