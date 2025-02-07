@@ -30,7 +30,7 @@ same function as the first to keep the balance of the pyramid.
 
  */
 function padRow(rowNumber, rowCount) {
-  return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+	return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
 }
 
 /* 
@@ -53,11 +53,11 @@ function padRow(rowNumber, rowCount) {
 	this will stopped and end the program with the result.
 */
 for (let i = 1; i <= count; i++) {
-  if (inverted) {
-    rows.unshift(padRow(i, count));
-  } else {
-    rows.push(padRow(i, count));
-  }
+	if (inverted) {
+		rows.unshift(padRow(i, count));
+	} else {
+		rows.push(padRow(i, count));
+	}
 }
 
 /*
@@ -74,7 +74,25 @@ for (let i = 1; i <= count; i++) {
 let result = ""
 
 for (const row of rows) {
-  result = result + "\n" + row;
+	result = result + "\n" + row;
 }
 
 console.log(result);
+
+//Another way to make pyramid
+const pyramid = (symbol, numberOfStages, isInverted) => {
+	const rows = [];
+	for (let i = 1; i <= numberOfStages; i++) {
+		const row = " ".repeat(numberOfStages - i) + symbol.repeat(2 * i - 1);
+		rows.push(row);
+	}
+
+	if (isInverted) {
+		rows.reverse();
+	}
+
+	return `\n${rows.join("\n")}\n`;
+};
+
+console.log(pyramid("o", 4, false));
+console.log(pyramid("p", 5, true));
