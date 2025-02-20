@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#drum-machine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  flex-direction: column;
+  width: 300px;
+}
+
+#pad-bank {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid black;
+  flex-wrap: wrap;
+}
+
+.drum-pad {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  cursor: pointer;
+}
